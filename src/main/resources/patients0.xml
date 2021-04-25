@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<patients>
+    
+    <patient>
+        <fullName>Matvey Yakovlev</fullName>
+        <address>Winding Way,10</address>
+        <birthday>1977-10-21</birthday>
+        <receiptDate>1977-10-21</receiptDate>
+        <doctorsFullName>Lis Greenberg</doctorsFullName>
+        <conclusion>Influenza</conclusion>
+    </patient>
+    <patient>
+        <fullName>Abram Mikhailov</fullName>
+        <address>Taylor Street,12</address>
+        <birthday>1978-10-25</birthday>
+        <receiptDate>1978-10-25</receiptDate>
+        <doctorsFullName>Gulnora Byquist</doctorsFullName>
+        <conclusion>Diphtheria</conclusion>
+    </patient>
+    <patient>
+        <fullName>Vova Vasilyev</fullName>
+        <address>Winding Way,13</address>
+        <birthday>1979-02-19</birthday>
+        <receiptDate>1979-02-19</receiptDate>
+        <doctorsFullName>Semin Anton</doctorsFullName>
+        <conclusion>Malaria</conclusion>
+    </patient>
+    <patient>
+        <fullName>Taras Vasilyev</fullName>
+        <address>North Street,2</address>
+        <birthday>1980-04-16</birthday>
+        <receiptDate>1980-04-16</receiptDate>
+        <doctorsFullName>Alyonka Heimans</doctorsFullName>
+        <conclusion>Giardiasis</conclusion>
+    </patient>
+    <patient>
+        <fullName>Yakov Andreev</fullName>
+        <address>Cleveland Avenue,6</address>
+        <birthday>1981-10-06</birthday>
+        <receiptDate>1981-10-06</receiptDate>
+        <doctorsFullName>Damjana Evanson</doctorsFullName>
+        <conclusion>Malaria</conclusion>
+    </patient>
+    <patient>
+        <fullName>Yana Zima</fullName>
+        <address>North Street,7</address>
+        <birthday>1983-11-23</birthday>
+        <receiptDate>1983-11-23</receiptDate>
+        <doctorsFullName>Lis Greenberg</doctorsFullName>
+        <conclusion>Influenza</conclusion>
+    </patient>
+    <patient>
+        <fullName>Ivan Putin</fullName>
+        <address>Taylor Street,2</address>
+        <birthday>1984-05-01</birthday>
+        <receiptDate>1984-05-01</receiptDate>
+        <doctorsFullName>Alyonka Heimans</doctorsFullName>
+        <conclusion>Diphtheria</conclusion>
+    </patient>
+    <patient>
+        <fullName>Dmitry Sokolov</fullName>
+        <address>North Street,1</address>
+        <birthday>1985-05-01</birthday>
+        <receiptDate>1985-05-01</receiptDate>
+        <doctorsFullName>Gulnora Byquist</doctorsFullName>
+        <conclusion>Measles</conclusion>
+    </patient>
+    <patient>
+        <fullName>Verochka Alekseev</fullName>
+        <address>Winding Way,23</address>
+        <birthday>1987-10-13</birthday>
+        <receiptDate>1987-10-13</receiptDate>
+        <doctorsFullName>Damjana Evanson</doctorsFullName>
+        <conclusion>Giardiasis</conclusion>
+    </patient>
+    <patient>
+        <fullName>Dasha Sobol</fullName>
+        <address>North Street,27</address>
+        <birthday>1988-01-06</birthday>
+        <receiptDate>1988-01-06</receiptDate>
+        <doctorsFullName>Gulnora Byquist</doctorsFullName>
+        <conclusion>Measles</conclusion>
+    </patient>
+    <patient>
+        <fullName>Slava Fyodorov</fullName>
+        <address>Taylor Street,16</address>
+        <birthday>1990-06-04</birthday>
+        <receiptDate>1990-06-04</receiptDate>
+        <doctorsFullName>Alyonka Heimans</doctorsFullName>
+        <conclusion>Diphtheria</conclusion>
+    </patient>
+    <patient>
+        <fullName>Denis Konstantinov</fullName>
+        <address>North Street,12</address>
+        <birthday>1993-04-22</birthday>
+        <receiptDate>1993-04-22</receiptDate>
+        <doctorsFullName>Lis Greenberg</doctorsFullName>
+        <conclusion>Influenza</conclusion>
+    </patient>
+    <patient>
+        <fullName>Khariton Borisov</fullName>
+        <address>Taylor Street,13</address>
+        <birthday>1993-07-05</birthday>
+        <receiptDate>1993-07-05</receiptDate>
+        <doctorsFullName>Alyonka Heimans</doctorsFullName>
+        <conclusion>Giardiasis</conclusion>
+    </patient>
+    <patient>
+        <fullName>Galina Naoumov</fullName>
+        <address>Winding Way,62</address>
+        <birthday>1993-12-20</birthday>
+        <receiptDate>1993-12-20</receiptDate>
+        <doctorsFullName>Mcloren</doctorsFullName>
+        <conclusion>Malaria</conclusion>
+    </patient>
+    <patient>
+        <fullName>Olya Morozov</fullName>
+        <address>Taylor Street,21</address>
+        <birthday>1994-05-30</birthday>
+        <receiptDate>1994-05-30</receiptDate>
+        <doctorsFullName>Alyonka Heimans</doctorsFullName>
+        <conclusion>Diphtheria</conclusion>
+    </patient>
+    <patient>
+        <fullName>Ipati Sokolovsky</fullName>
+        <address>North Street,52</address>
+        <birthday>1995-06-02</birthday>
+        <receiptDate>1995-06-02</receiptDate>
+        <doctorsFullName>Lis Greenberg</doctorsFullName>
+        <conclusion>Giardiasis</conclusion>
+    </patient>
+    <patient>
+        <fullName>Artemiy Krupin</fullName>
+        <address>North Street,12</address>
+        <birthday>1997-06-02</birthday>
+        <receiptDate>1997-06-02</receiptDate>
+        <doctorsFullName>Damjana Evanson</doctorsFullName>
+        <conclusion>Measles</conclusion>
+    </patient>
+    <patient>
+        <fullName>Valery Krupin</fullName>
+        <address>Winding Way,74</address>
+        <birthday>1997-11-19</birthday>
+        <receiptDate>1997-11-19</receiptDate>
+        <doctorsFullName>Damjana Evanson</doctorsFullName>
+        <conclusion>Influenza</conclusion>
+    </patient>
+    <patient>
+        <fullName>Yevfimiy Orlov</fullName>
+        <address>Taylor Street,73</address>
+        <birthday>2001-11-22</birthday>
+        <receiptDate>2001-11-22</receiptDate>
+        <doctorsFullName>Lis Greenberg</doctorsFullName>
+        <conclusion>Diphtheria</conclusion>
+    </patient>
+    <patient>
+        <fullName>Luba Vinogradov</fullName>
+        <address>Cleveland Avenue,34</address>
+        <birthday>2002-03-13</birthday>
+        <receiptDate>2002-03-13</receiptDate>
+        <doctorsFullName>Gulnora Byquist</doctorsFullName>
+        <conclusion>Measles</conclusion>
+    </patient>
+    <patient>
+        <fullName>Valeri Antonov</fullName>
+        <address>Winding Way,52</address>
+        <birthday>2003-08-28</birthday>
+        <receiptDate>2003-08-28</receiptDate>
+        <doctorsFullName>Mcloren</doctorsFullName>
+        <conclusion>Influenza</conclusion>
+    </patient>
+    <patient>
+        <fullName>Dmitri Kovalyov</fullName>
+        <address>Taylor Street,12</address>
+        <birthday>2004-02-19</birthday>
+        <receiptDate>2004-02-19</receiptDate>
+        <doctorsFullName>Lis Greenberg</doctorsFullName>
+        <conclusion>Diphtheria</conclusion>
+    </patient>
+    <patient>
+        <fullName>Roman Vasilyev</fullName>
+        <address>Cleveland Avenue,73</address>
+        <birthday>2008-04-28</birthday>
+        <receiptDate>2008-04-28</receiptDate>
+        <doctorsFullName>Mcloren</doctorsFullName>
+        <conclusion>Giardiasis</conclusion>
+    </patient>
+    <patient>
+        <fullName>Aleksey Vasilyev</fullName>
+        <address>Taylor Street,62</address>
+        <birthday>2014-04-04</birthday>
+        <receiptDate>2014-04-04</receiptDate>
+        <doctorsFullName>Alyonka Heimans</doctorsFullName>
+        <conclusion>Measles</conclusion>
+    </patient>
+    <patient>
+        <fullName>Afonya Romanov</fullName>
+        <address>Winding Way,62</address>
+        <birthday>1979-05-11</birthday>
+        <receiptDate>1979-05-11</receiptDate>
+        <doctorsFullName>Damjana Evanson</doctorsFullName>
+        <conclusion>Influenza</conclusion>
+    </patient>
+    <patient>
+        <fullName>Olesya Bogdanov</fullName>
+        <address>Cleveland Avenue,52</address>
+        <birthday>1981-03-03</birthday>
+        <receiptDate>1981-03-03</receiptDate>
+        <doctorsFullName>Gulnora Byquist</doctorsFullName>
+        <conclusion>Diphtheria</conclusion>
+    </patient>
+    <patient>
+        <fullName>Toma Aleksandrov</fullName>
+        <address>Taylor Street,12</address>
+        <birthday>1981-12-24</birthday>
+        <receiptDate>1981-12-24</receiptDate>
+        <doctorsFullName>Gulnora Byquist</doctorsFullName>
+        <conclusion>Malaria</conclusion>
+    </patient>
+    <patient>
+        <fullName>Timofey Vinogradov</fullName>
+        <address>Winding Way,72</address>
+        <birthday>1982-07-21</birthday>
+        <receiptDate>1982-07-21</receiptDate>
+        <doctorsFullName>Gulnora Byquist</doctorsFullName>
+        <conclusion>Giardiasis</conclusion>
+    </patient>
+    <patient>
+        <fullName>Ippolit Shvets</fullName>
+        <address>North Street,74</address>
+        <birthday>1983-10-03</birthday>
+        <receiptDate>1983-10-03</receiptDate>
+        <doctorsFullName>Damjana Evanson</doctorsFullName>
+        <conclusion>Influenza</conclusion>
+    </patient>
+    <patient>
+        <fullName>Miroslava Krupin</fullName>
+        <address>North Street,15</address>
+        <birthday>1986-05-22</birthday>
+        <receiptDate>1986-05-22</receiptDate>
+        <doctorsFullName>Alyonka Heimans</doctorsFullName>
+        <conclusion>Diphtheria</conclusion>
+    </patient>
+    <patient>
+        <fullName>Adam Tchaikovsky</fullName>
+        <address>Winding Way,85</address>
+        <birthday>1986-12-24</birthday>
+        <receiptDate>1986-12-24</receiptDate>
+        <doctorsFullName>Damjana Evanson</doctorsFullName>
+        <conclusion>Giardiasis</conclusion>
+    </patient>
+    <patient>
+        <fullName>Adrian Antonov</fullName>
+        <address>Cleveland Avenue,18</address>
+        <birthday>1989-06-08</birthday>
+        <receiptDate>1989-06-08</receiptDate>
+        <doctorsFullName>Damjana Evanson</doctorsFullName>
+        <conclusion>Influenza</conclusion>
+    </patient>
+    <patient>
+        <fullName>Germogen Pasternak</fullName>
+        <address>North Street,125</address>
+        <birthday>1990-07-09</birthday>
+        <receiptDate>1990-07-09</receiptDate>
+        <doctorsFullName>Damjana Evanson</doctorsFullName>
+        <conclusion>Diphtheria</conclusion>
+    </patient>
+    <patient>
+        <fullName>Anastasia Pavlovsky</fullName>
+        <address>Taylor Street,621</address>
+        <birthday>1993-10-25</birthday>
+        <receiptDate>1993-10-25</receiptDate>
+        <doctorsFullName>Damjana Evanson</doctorsFullName>
+        <conclusion>Measles</conclusion>
+    </patient>
+    <patient>
+        <fullName>Zakhar Novikov</fullName>
+        <address>Winding Way,52</address>
+        <birthday>1995-03-08</birthday>
+        <receiptDate>1995-03-08</receiptDate>
+        <doctorsFullName>Gulnora Byquist</doctorsFullName>
+        <conclusion>Giardiasis</conclusion>
+    </patient>
+    <patient>
+        <fullName>Liouba Shwetz</fullName>
+        <address>Taylor Street,51</address>
+        <birthday>1995-12-04</birthday>
+        <receiptDate>1995-12-04</receiptDate>
+        <doctorsFullName>Alyonka Heimans</doctorsFullName>
+        <conclusion>Measles</conclusion>
+    </patient>
+    <patient>
+        <fullName>Sofiya Konstantinov</fullName>
+        <address>North Street,62</address>
+        <birthday>1998-08-14</birthday>
+        <receiptDate>1998-08-14</receiptDate>
+        <doctorsFullName>Damjana Evanson</doctorsFullName>
+        <conclusion>Diphtheria</conclusion>
+    </patient>
+    <patient>
+        <fullName>Anna Krupin</fullName>
+        <address>Taylor Street,55</address>
+        <birthday>1998-10-09</birthday>
+        <receiptDate>1998-10-09</receiptDate>
+        <doctorsFullName>Alyonka Heimans</doctorsFullName>
+        <conclusion>Measles</conclusion>
+    </patient>
+    <patient>
+        <fullName>Rada Chaykovsky</fullName>
+        <address>Winding Way,21</address>
+        <birthday>2001-06-13</birthday>
+        <receiptDate>2001-06-13</receiptDate>
+        <doctorsFullName>Lis Greenberg</doctorsFullName>
+        <conclusion>Influenza</conclusion>
+    </patient>
+    <patient>
+        <fullName>Allochka Naoumov</fullName>
+        <address>North Street,58</address>
+        <birthday>2004-09-15</birthday>
+        <receiptDate>2004-09-15</receiptDate>
+        <doctorsFullName>Lis Greenberg</doctorsFullName>
+        <conclusion>Diphtheria</conclusion>
+    </patient>
+    <patient>
+        <fullName>Pelageya Aleksandrov</fullName>
+        <address>Taylor Street,86</address>
+        <birthday>2005-01-21</birthday>
+        <receiptDate>2005-01-21</receiptDate>
+        <doctorsFullName>Alyonka Heimans</doctorsFullName>
+        <conclusion>Malaria</conclusion>
+    </patient>
+    <patient>
+        <fullName>Kazimir Andreev</fullName>
+        <address>Cleveland Avenue,56</address>
+        <birthday>2010-06-11</birthday>
+        <receiptDate>2010-06-11</receiptDate>
+        <doctorsFullName>Damjana Evanson</doctorsFullName>
+        <conclusion>Giardiasis</conclusion>
+    </patient>
+    <patient>
+        <fullName>Mitrofan Ivanov</fullName>
+        <address>Taylor Street,84</address>
+        <birthday>2010-08-11</birthday>
+        <receiptDate>2010-08-11</receiptDate>
+        <doctorsFullName>Damjana Evanson</doctorsFullName>
+        <conclusion>Influenza</conclusion>
+    </patient>
+    <patient>
+        <fullName>Miroslava Fyodorov</fullName>
+        <address>Winding Way,42</address>
+        <birthday>2011-10-21</birthday>
+        <receiptDate>2011-10-21</receiptDate>
+        <doctorsFullName>Alyonka Heimans</doctorsFullName>
+        <conclusion>Diphtheria</conclusion>
+    </patient>
+    <patient>
+        <fullName>Patritsiya Putin</fullName>
+        <address>Taylor Street,62</address>
+        <birthday>2011-11-09</birthday>
+        <receiptDate>2011-11-09</receiptDate>
+        <doctorsFullName>Lis Greenberg</doctorsFullName>
+        <conclusion>Measles</conclusion>
+    </patient>
+    <patient>
+        <fullName>Yevfimiy Popov</fullName>
+        <address>Winding Way,12</address>
+        <birthday>2013-01-23</birthday>
+        <receiptDate>2013-01-23</receiptDate>
+        <doctorsFullName>Alyonka Heimans</doctorsFullName>
+        <conclusion>Diphtheria</conclusion>
+    </patient>
+    <patient>
+        <fullName>Maxim Krupin</fullName>
+        <address>Cleveland Avenue,62</address>
+        <birthday>2016-08-01</birthday>
+        <receiptDate>2016-08-01</receiptDate>
+        <doctorsFullName>Lis Greenberg</doctorsFullName>
+        <conclusion>Giardiasis</conclusion>
+    </patient>
+    <patient>
+        <fullName>Angelina Ignatov</fullName>
+        <address>Winding Way,75</address>
+        <birthday>2018-08-15</birthday>
+        <receiptDate>2018-08-15</receiptDate>
+        <doctorsFullName>Lis Greenberg</doctorsFullName>
+        <conclusion>Diphtheria</conclusion>
+    </patient>
+</patients>

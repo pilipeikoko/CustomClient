@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<patients>
+    
+    <patient>
+        <fullName>Yulia Lagounov</fullName>
+        <address>Franklin Street,12</address>
+        <birthday>1950-12-20</birthday>
+        <receiptDate>1950-12-20</receiptDate>
+        <doctorsFullName>Sergej Ivanov</doctorsFullName>
+        <conclusion>Pneumonia</conclusion>
+    </patient>
+    <patient>
+        <fullName>Afanasy Shvets</fullName>
+        <address>Front Street,17</address>
+        <birthday>1953-04-30</birthday>
+        <receiptDate>1953-04-30</receiptDate>
+        <doctorsFullName>Kesha Vasilev</doctorsFullName>
+        <conclusion>Diphtheria</conclusion>
+    </patient>
+    <patient>
+        <fullName>Igor Voronin</fullName>
+        <address>Arch Street,7</address>
+        <birthday>1959-11-05</birthday>
+        <receiptDate>1959-11-05</receiptDate>
+        <doctorsFullName>Feodor Lagounov</doctorsFullName>
+        <conclusion>Giardiasis</conclusion>
+    </patient>
+    <patient>
+        <fullName>Yefrem Markov</fullName>
+        <address>Jefferson Street,6</address>
+        <birthday>1959-12-31</birthday>
+        <receiptDate>1959-12-31</receiptDate>
+        <doctorsFullName>Nikon Zima</doctorsFullName>
+        <conclusion>Pneumonia</conclusion>
+    </patient>
+    <patient>
+        <fullName>Lilia Lebedev</fullName>
+        <address>Pine Street,52</address>
+        <birthday>1960-08-19</birthday>
+        <receiptDate>1960-08-19</receiptDate>
+        <doctorsFullName>Sergej Ivanov</doctorsFullName>
+        <conclusion>Measles</conclusion>
+    </patient>
+    <patient>
+        <fullName>Ludmilla Lebedev</fullName>
+        <address>Franklin Street,62</address>
+        <birthday>1962-05-15</birthday>
+        <receiptDate>1962-05-15</receiptDate>
+        <doctorsFullName>Kesha Vasilev</doctorsFullName>
+        <conclusion>Tetanus</conclusion>
+    </patient>
+    <patient>
+        <fullName>Feofan Morozov</fullName>
+        <address>Front Street,62</address>
+        <birthday>1963-07-18</birthday>
+        <receiptDate>1963-07-18</receiptDate>
+        <doctorsFullName>Feodor Lagounov</doctorsFullName>
+        <conclusion>Tuberculosis</conclusion>
+    </patient>
+    <patient>
+        <fullName>Ksenia Konstantinov</fullName>
+        <address>Overlook Circle,62</address>
+        <birthday>1966-01-17</birthday>
+        <receiptDate>1966-01-17</receiptDate>
+        <doctorsFullName>Varya Zima</doctorsFullName>
+        <conclusion>Malaria</conclusion>
+    </patient>
+    <patient>
+        <fullName>Venyamin Petrov</fullName>
+        <address>Arch Street,61</address>
+        <birthday>1966-06-28</birthday>
+        <receiptDate>1966-06-28</receiptDate>
+        <doctorsFullName>Sergej Ivanov</doctorsFullName>
+        <conclusion>Diphtheria</conclusion>
+    </patient>
+    <patient>
+        <fullName>Patya Andreev</fullName>
+        <address>4th Street,67</address>
+        <birthday>1977-05-18</birthday>
+        <receiptDate>1977-05-18</receiptDate>
+        <doctorsFullName>Feodor Lagounov</doctorsFullName>
+        <conclusion>Mumps</conclusion>
+    </patient>
+    <patient>
+        <fullName>Isidor Kovalyov</fullName>
+        <address>Oak street,72</address>
+        <birthday>1980-08-22</birthday>
+        <receiptDate>1980-08-22</receiptDate>
+        <doctorsFullName>Sergej Ivanov</doctorsFullName>
+        <conclusion>Measles</conclusion>
+    </patient>
+    <patient>
+        <fullName>Pankrati Lagunov</fullName>
+        <address>Pine Street,82</address>
+        <birthday>1981-10-13</birthday>
+        <receiptDate>1981-10-13</receiptDate>
+        <doctorsFullName>Varya Zima</doctorsFullName>
+        <conclusion>Pneumonia</conclusion>
+    </patient>
+    <patient>
+        <fullName>Klim Shvets</fullName>
+        <address>Route 44,6</address>
+        <birthday>1982-01-05</birthday>
+        <receiptDate>1982-01-05</receiptDate>
+        <doctorsFullName>Kesha Vasilev</doctorsFullName>
+        <conclusion>Malaria</conclusion>
+    </patient>
+    <patient>
+        <fullName>Nataliya Lenin</fullName>
+        <address>Oak street,60</address>
+        <birthday>1989-10-05</birthday>
+        <receiptDate>1989-10-05</receiptDate>
+        <doctorsFullName>Kesha Vasilev</doctorsFullName>
+        <conclusion>Shingles</conclusion>
+    </patient>
+    <patient>
+        <fullName>Yelena Volkov</fullName>
+        <address>Jefferson Street,7</address>
+        <birthday>1989-11-20</birthday>
+        <receiptDate>1989-11-20</receiptDate>
+        <doctorsFullName>Sergej Ivanov</doctorsFullName>
+        <conclusion>Shingles</conclusion>
+    </patient>
+    <patient>
+        <fullName>Yuriy Sobol</fullName>
+        <address>Overlook Circle,92</address>
+        <birthday>1995-03-27</birthday>
+        <receiptDate>1995-03-27</receiptDate>
+        <doctorsFullName>Feodor Lagounov</doctorsFullName>
+        <conclusion>Malaria</conclusion>
+    </patient>
+    <patient>
+        <fullName>Lukyan Borisov</fullName>
+        <address>8th Street,5</address>
+        <birthday>1996-08-26</birthday>
+        <receiptDate>1996-08-26</receiptDate>
+        <doctorsFullName>Nikon Zima</doctorsFullName>
+        <conclusion>Pneumonia</conclusion>
+    </patient>
+    <patient>
+        <fullName>Liouba Popov</fullName>
+        <address>Pine Street,2</address>
+        <birthday>1997-03-04</birthday>
+        <receiptDate>1997-03-04</receiptDate>
+        <doctorsFullName>Sergej Ivanov</doctorsFullName>
+        <conclusion>Tetanus</conclusion>
+    </patient>
+    <patient>
+        <fullName>Matvey Lenin</fullName>
+        <address>Front Street,234</address>
+        <birthday>1998-01-01</birthday>
+        <receiptDate>1998-01-01</receiptDate>
+        <doctorsFullName>Varya Zima</doctorsFullName>
+        <conclusion>Malaria</conclusion>
+    </patient>
+    <patient>
+        <fullName>Oktyabrina Lebedev</fullName>
+        <address>Arch Street,20</address>
+        <birthday>2001-07-11</birthday>
+        <receiptDate>2001-07-11</receiptDate>
+        <doctorsFullName>Kesha Vasilev</doctorsFullName>
+        <conclusion>Shingles</conclusion>
+    </patient>
+    <patient>
+        <fullName>Vasya Lebedev</fullName>
+        <address>Overlook Circle,20</address>
+        <birthday>2003-08-07</birthday>
+        <receiptDate>2003-08-07</receiptDate>
+        <doctorsFullName>Sergej Ivanov</doctorsFullName>
+        <conclusion>Pneumonia</conclusion>
+    </patient>
+    <patient>
+        <fullName>Yakim Melnik</fullName>
+        <address>Front Street,28</address>
+        <birthday>2014-12-18</birthday>
+        <receiptDate>2014-12-18</receiptDate>
+        <doctorsFullName>Feodor Lagounov</doctorsFullName>
+        <conclusion>Shingles</conclusion>
+    </patient>
+    <patient>
+        <fullName>Varvara Filippov</fullName>
+        <address>Route 44,62</address>
+        <birthday>2016-03-08</birthday>
+        <receiptDate>2016-03-08</receiptDate>
+        <doctorsFullName>Nikon Zima</doctorsFullName>
+        <conclusion>Malaria</conclusion>
+    </patient>
+    <patient>
+        <fullName>Esfir Voronin</fullName>
+        <address>Overlook Circle,61</address>
+        <birthday>2018-04-06</birthday>
+        <receiptDate>2018-04-06</receiptDate>
+        <doctorsFullName>Kesha Vasilev</doctorsFullName>
+        <conclusion>Pneumonia</conclusion>
+    </patient>
+    <patient>
+        <fullName>Maria Bogdanov</fullName>
+        <address>Oak Street,90</address>
+        <birthday>2018-09-18</birthday>
+        <receiptDate>2018-09-18</receiptDate>
+        <doctorsFullName>Sergej Ivanov</doctorsFullName>
+        <conclusion>Shingles</conclusion>
+    </patient>
+    <patient>
+        <fullName>Liudmila Sokolov</fullName>
+        <address>River Road,20</address>
+        <birthday>1987-02-24</birthday>
+        <receiptDate>1987-02-24</receiptDate>
+        <doctorsFullName>Varya Zima</doctorsFullName>
+        <conclusion>Tetanus</conclusion>
+    </patient>
+    <patient>
+        <fullName>Assol Ivanov</fullName>
+        <address>Franklin Street,21</address>
+        <birthday>1991-01-30</birthday>
+        <receiptDate>1991-01-30</receiptDate>
+        <doctorsFullName>Nikon Zima</doctorsFullName>
+        <conclusion>Shingles</conclusion>
+    </patient>
+    <patient>
+        <fullName>Daria Putin</fullName>
+        <address>Front Street,52</address>
+        <birthday>1991-10-30</birthday>
+        <receiptDate>1991-10-30</receiptDate>
+        <doctorsFullName>Sergej Ivanov</doctorsFullName>
+        <conclusion>Malaria</conclusion>
+    </patient>
+    <patient>
+        <fullName>Nastasya Petrov</fullName>
+        <address>Franklin Street,24</address>
+        <birthday>1992-08-20</birthday>
+        <receiptDate>1992-08-20</receiptDate>
+        <doctorsFullName>Feodor Lagounov</doctorsFullName>
+        <conclusion>Pneumonia</conclusion>
+    </patient>
+    <patient>
+        <fullName>Anton Morozov</fullName>
+        <address>Front Street,62</address>
+        <birthday>1993-05-11</birthday>
+        <receiptDate>1993-05-11</receiptDate>
+        <doctorsFullName>Sergej Ivanov</doctorsFullName>
+        <conclusion>Tetanus</conclusion>
+    </patient>
+</patients>
