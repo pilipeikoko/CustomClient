@@ -184,14 +184,14 @@ public class MainFrameController {
         menuItems[0].addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                new LoadFromFileView(patientService);
+                new LoadFromServerView(patientService);
             }
         });
 
         menuItems[1].addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                new SaveToFileView(patientService);
+                new SaveOnClientView(patientService);
             }
         });
 
@@ -213,6 +213,13 @@ public class MainFrameController {
             @Override
             public void actionPerformed(ActionEvent e) {
                 new SearchPatientView(patientService);
+            }
+        });
+
+        menuItems[5].addActionListener(new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new SaveOnServerView(patientService);
             }
         });
     }

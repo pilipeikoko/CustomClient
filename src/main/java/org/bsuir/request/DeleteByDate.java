@@ -13,7 +13,7 @@ public class DeleteByDate extends ServerRequest {
     public DeleteByDate(CustomDate date) {
         super();
         this.date = date;
-        this.requestType = RequestType.SEARCH_BY_BIRTHDAY;
+        this.requestType = RequestType.DELETE_BY_BIRTHDAY;
     }
 
     public CustomDate getDate() {

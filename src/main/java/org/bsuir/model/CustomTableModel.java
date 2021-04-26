@@ -7,15 +7,15 @@ import java.util.*;
 
 public class CustomTableModel extends DefaultTableModel {
 
-    public CustomTableModel() {
+    private CustomTableModel() {
 
         super(Parameters.defaultData, Parameters.TABLE_HEADER);
     }
 
-    public static CustomTableModel parseListToTableModel(List<Patient> list){
+    public static CustomTableModel parseListToTableModel(List<Patient> list) {
         CustomTableModel model = new CustomTableModel();
 
-        for(Patient patient: list){
+        for (Patient patient : list) {
             model.addRow(parsePatient(patient));
         }
 

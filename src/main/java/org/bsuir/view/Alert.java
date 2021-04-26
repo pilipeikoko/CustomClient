@@ -54,4 +54,8 @@ public class Alert {
     public static void incorrectFormatAlert() {
         JOptionPane.showMessageDialog(null, "Only XML formats are supported");
     }
+
+    public static void serverAlert(String s) {
+        JOptionPane.showMessageDialog(null, s);
+    }
 }

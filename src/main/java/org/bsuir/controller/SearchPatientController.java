@@ -69,7 +69,7 @@ public class SearchPatientController {
         this.pageLabelItems = pageLabelItems;
         this.pageSpinner = pageSpinner;
         this.patientService = patientService;
-       // this.foundListOfPatients = new ArrayList<>();
+        // this.foundListOfPatients = new ArrayList<>();
 
         setSearchButtonAction();
         setPageButtonItemsController();
@@ -78,12 +78,9 @@ public class SearchPatientController {
     }
 
     private void addComboBoxItemListener() {
-        searchByTypeComboBox.addItemListener(new ItemListener() {
-            @Override
-            public void itemStateChanged(ItemEvent e) {
-                CardLayout layout = (CardLayout) (cards.getLayout());
-                layout.show(cards, (String) e.getItem());
-            }
+        searchByTypeComboBox.addItemListener(e -> {
+            CardLayout layout = (CardLayout) (cards.getLayout());
+            layout.show(cards, (String) e.getItem());
         });
     }
 
@@ -156,14 +153,14 @@ public class SearchPatientController {
             if (foundListOfPatients == null) {
                 throw new CustomClientException("Haven't searched");
             }
-            if(newPageNumber <= 0){
+            if (newPageNumber <= 0) {
                 throw new EmptyFieldException("Wrong page number");
             }
 
             int totalAmountOfFoundPatients = foundListOfPatients.size();
             int amountOfPages = (totalAmountOfFoundPatients - 1) / amountOfNotesOnTheTable + 1;
 
-            List<Patient> currentList = patientService.getPageByList(foundListOfPatients,newPageNumber,amountOfNotesOnTheTable);
+            List<Patient> currentList = patientService.getPageByList(foundListOfPatients, newPageNumber, amountOfNotesOnTheTable);
 
             table.setModel(CustomTableModel.parseListToTableModel(currentList));
 
@@ -172,7 +169,7 @@ public class SearchPatientController {
             pageLabelItems[3].setText(String.valueOf(newPageNumber));
         } catch (CustomClientException exception) {
             Alert.unsuccessfulSearchAlert("Haven't searched: click search");
-        } catch (EmptyFieldException exception){
+        } catch (EmptyFieldException exception) {
             Alert.wrongPageAlert();
         }
     }
@@ -211,6 +208,8 @@ public class SearchPatientController {
                     }
                 } catch (EmptyFieldException exception) {
                     Alert.unknownTypeAlert();
+                } catch (CustomClientException exception) {
+                    Alert.serverAlert("Couldn't get response");
                 }
             }
         });

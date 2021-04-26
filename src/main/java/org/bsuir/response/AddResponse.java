@@ -1,14 +1,14 @@
 package org.bsuir.response;
 
-public class AddResponse extends ServerResponse{
+public class AddResponse extends ServerResponse {
     private boolean isAdded;
 
-    public AddResponse(){
+    public AddResponse() {
         super();
         isAdded = false;
     }
 
-    public AddResponse(boolean flag){
+    public AddResponse(boolean flag) {
         this.isAdded = flag;
     }
 

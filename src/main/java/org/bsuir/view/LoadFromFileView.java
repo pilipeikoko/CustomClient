@@ -10,6 +10,6 @@ public class LoadFromFileView {
     public LoadFromFileView(PatientService patientService) {
         JFileChooser fileChooser = new JFileChooser();
         fileChooser.setDialogTitle("Load from");
-        new LoadFromFileController(fileChooser,patientService);
+        new LoadFromFileController(fileChooser, patientService);
     }
 }

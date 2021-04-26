@@ -12,7 +12,7 @@ public class SearchPatientView {
                 searchPatientBuilder.getCardsDatePanels(), searchPatientBuilder.getSearchByTypeComboBox(),
                 searchPatientBuilder.getTable(), searchPatientBuilder.getPageButtonItems(),
                 searchPatientBuilder.getPageSpinner(), searchPatientBuilder.getPageLabelItems(),
-                searchPatientBuilder.getCards(),patientService);
+                searchPatientBuilder.getCards(), patientService);
     }
 
 }

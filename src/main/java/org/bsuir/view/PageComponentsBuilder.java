@@ -16,7 +16,7 @@ public class PageComponentsBuilder {
     private final JButton[] buttonItems;
     private final JSpinner pageSpinner;
 
-    public PageComponentsBuilder(){
+    public PageComponentsBuilder() {
         labelItems = new JLabel[AMOUNT_OF_LABELS];
         buttonItems = new JButton[AMOUNT_OF_BUTTONS];
 
@@ -45,7 +45,6 @@ public class PageComponentsBuilder {
 
         nextPageButton.setForeground(Color.BLACK);
         nextPageButton.setBackground(Color.WHITE);
-
 
 
         firstPageButton.setBorder(new RoundedBorder(5));
@@ -77,6 +76,7 @@ public class PageComponentsBuilder {
         labelItems[2] = AmountOfPatientsLabel;
         labelItems[3] = currentPageLabel;
     }
+
     /**
      * <br>[0] first page button</br>
      * <br>[1] previous page button</br>

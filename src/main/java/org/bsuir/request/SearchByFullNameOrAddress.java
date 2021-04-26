@@ -2,11 +2,11 @@ package org.bsuir.request;
 
 import org.bsuir.util.RequestType;
 
-public class SearchByFullNameOrAddress extends ServerRequest{
+public class SearchByFullNameOrAddress extends ServerRequest {
     private String fullName;
     private String address;
 
-    public SearchByFullNameOrAddress(){
+    public SearchByFullNameOrAddress() {
         super();
     }
 

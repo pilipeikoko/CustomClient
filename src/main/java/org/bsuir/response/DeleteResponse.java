@@ -1,13 +1,13 @@
 package org.bsuir.response;
 
-public class DeleteResponse extends ServerResponse{
+public class DeleteResponse extends ServerResponse {
     int amount;
 
-    public DeleteResponse(){
+    public DeleteResponse() {
         super();
     }
 
-    public DeleteResponse(int amount){
+    public DeleteResponse(int amount) {
         this.amount = amount;
     }
 

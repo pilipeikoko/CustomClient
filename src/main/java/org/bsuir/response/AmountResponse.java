@@ -1,13 +1,13 @@
 package org.bsuir.response;
 
-public class AmountResponse extends ServerResponse{
+public class AmountResponse extends ServerResponse {
     int amount;
 
-    public AmountResponse(){
+    public AmountResponse() {
         super();
     }
 
-    public AmountResponse(int amount){
+    public AmountResponse(int amount) {
         this.amount = amount;
     }
 

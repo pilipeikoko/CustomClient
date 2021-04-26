@@ -8,25 +8,27 @@ import java.util.List;
 
 public interface PatientService {
 
-    List<Patient> getPage(int amountOfPages, int amountOfPagesOnTheTable);
+    List<Patient> getPage(int amountOfPages, int amountOfPagesOnTheTable) throws CustomClientException;
 
-    List<Patient> getPageByList(List<Patient> list, int amountOfPages, int amountOfPagesOnTheTable);
+    List<Patient> getPageByList(List<Patient> list, int amountOfPages, int amountOfPagesOnTheTable) throws CustomClientException;
 
     void addPatient(Patient professorToAdd) throws CustomClientException;
 
-    int deletePatientByDate(CustomDate date);
+    int deletePatientByDate(CustomDate date) throws CustomClientException;
 
-    int deletePatientByFullNameOrAddress(String fullName, String Address);
+    int deletePatientByFullNameOrAddress(String fullName, String Address) throws CustomClientException;
 
-    int deletePatientByDoctorsFullNameOrReceiptDate(String fullName, CustomDate date);
+    int deletePatientByDoctorsFullNameOrReceiptDate(String fullName, CustomDate date) throws CustomClientException;
 
-    List<Patient> searchPatientByDate(CustomDate date);
+    List<Patient> searchPatientByDate(CustomDate date) throws CustomClientException;
 
-    List<Patient> searchPatientByFullNameOrAddress(String fullName, String Address);
+    List<Patient> searchPatientByFullNameOrAddress(String fullName, String Address) throws CustomClientException;
 
-    List<Patient> searchPatientByDoctorsFullNameOrReceiptDate(String fullName, CustomDate date);
+    List<Patient> searchPatientByDoctorsFullNameOrReceiptDate(String fullName, CustomDate date) throws CustomClientException;
 
-    int getAmountOfPatients();
+    List<Patient> getAllPatients() throws CustomClientException;
+
+    int getAmountOfPatients() throws CustomClientException;
 
 
     void readFromFile(String sourceFilePath) throws CustomClientException;

@@ -15,15 +15,12 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.Socket;
-import java.util.ArrayList;
 import java.util.List;
 
 public class PatientServiceImpl implements PatientService {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(PatientServiceImpl.class);
 
-    private List<Patient> listOfPatients = new ArrayList<>();
-    private String sourceFile;
     private String serverAddress;
     private int serverPort;
     private Socket serverSocket;
@@ -50,7 +47,7 @@ public class PatientServiceImpl implements PatientService {
         }
     }
 
-    private ServerResponse sendAndGetResponse(ServerRequest serverRequest) {
+    private ServerResponse sendAndGetResponse(ServerRequest serverRequest) throws CustomClientException {
         ObjectInputStream inputStream;
         ObjectOutputStream outputStream;
 
@@ -70,40 +67,36 @@ public class PatientServiceImpl implements PatientService {
 
             Object obj = inputStream.readObject();
             ServerResponse serverResponse = (ServerResponse) obj;
-            //LOGGER.info(serverResponse..toString());
-            // todo get response content
+            LOGGER.info(serverResponse.toString());
             return serverResponse;
         } catch (IOException exception) {
-            LOGGER.error("Error while sending object!");
-            exception.printStackTrace();
+            LOGGER.error("Error while sending object");
         } catch (ClassNotFoundException e) {
-            LOGGER.error("Error while receiving object!");
-            e.printStackTrace();
+            LOGGER.error("Error while receiving object");
         }
-//todo throw, dont return new
-        return new ServerResponse();
+        throw new CustomClientException("Unable to get response");
     }
 
     private void addRequest(Patient patient) throws CustomClientException {
         ServerRequest addRequest = new AddRequest(patient);
 
-        AddResponse addResponse =(AddResponse) sendAndGetResponse(addRequest);
+        AddResponse addResponse = (AddResponse) sendAndGetResponse(addRequest);
 
-        if(!addResponse.isAdded()){
+        if (!addResponse.isAdded()) {
             throw new CustomClientException("Couldn't add");
         }
 
     }
 
-    private List<Patient> getPageRequest(int currentPage, int amountOfPagesOnTheTable){
-        ServerRequest getPageRequest = new FindPage(currentPage,amountOfPagesOnTheTable);
+    private List<Patient> getPageRequest(int currentPage, int amountOfPagesOnTheTable) throws CustomClientException {
+        ServerRequest getPageRequest = new FindPage(currentPage, amountOfPagesOnTheTable);
 
         PageResponse pageResponse = (PageResponse) sendAndGetResponse(getPageRequest);
 
         return pageResponse.getListOfPatients();
     }
 
-    private int deletePatientByDateRequest(CustomDate date) {
+    private int deletePatientByDateRequest(CustomDate date) throws CustomClientException {
         ServerRequest deleteRequest = new DeleteByDate(date);
 
         DeleteResponse deleteResponse = (DeleteResponse) sendAndGetResponse(deleteRequest);
@@ -111,24 +104,24 @@ public class PatientServiceImpl implements PatientService {
         return deleteResponse.getAmount();
     }
 
-    private int deletePatientByFullNameOrAddressRequest(String fullName, String address) {
+    private int deletePatientByFullNameOrAddressRequest(String fullName, String address) throws CustomClientException {
 
-        ServerRequest deleteRequest = new DeleteByFullNameOrAddress(fullName,address);
-
-        DeleteResponse deleteResponse = (DeleteResponse) sendAndGetResponse(deleteRequest);
-
-        return deleteResponse.getAmount();
-    }
-
-    private int deletePatientByDoctorsFullNameOrReceiptDateRequest(String fullName, CustomDate date) {
-        ServerRequest deleteRequest = new DeleteByDoctorsFullNameOrDate(fullName,date);
+        ServerRequest deleteRequest = new DeleteByFullNameOrAddress(fullName, address);
 
         DeleteResponse deleteResponse = (DeleteResponse) sendAndGetResponse(deleteRequest);
 
         return deleteResponse.getAmount();
     }
 
-    private int getAmountOfPatientsRequest() {
+    private int deletePatientByDoctorsFullNameOrReceiptDateRequest(String fullName, CustomDate date) throws CustomClientException {
+        ServerRequest deleteRequest = new DeleteByDoctorsFullNameOrDate(fullName, date);
+
+        DeleteResponse deleteResponse = (DeleteResponse) sendAndGetResponse(deleteRequest);
+
+        return deleteResponse.getAmount();
+    }
+
+    private int getAmountOfPatientsRequest() throws CustomClientException {
         ServerRequest request = new GetAmountOfPatients();
 
         AmountResponse response = (AmountResponse) sendAndGetResponse(request);
@@ -137,7 +130,7 @@ public class PatientServiceImpl implements PatientService {
     }
 
 
-    private List<Patient> searchPatientByDateRequest(CustomDate date) {
+    private List<Patient> searchPatientByDateRequest(CustomDate date) throws CustomClientException {
         ServerRequest request = new SearchByDate(date);
 
         SearchResponse response = (SearchResponse) sendAndGetResponse(request);
@@ -145,16 +138,16 @@ public class PatientServiceImpl implements PatientService {
         return response.getListOfPatients();
     }
 
-    private List<Patient> searchPatientByFullNameOrAddressRequest(String fullName, String address) {
-        ServerRequest request = new SearchByFullNameOrAddress(fullName,address);
+    private List<Patient> searchPatientByFullNameOrAddressRequest(String fullName, String address) throws CustomClientException {
+        ServerRequest request = new SearchByFullNameOrAddress(fullName, address);
 
         SearchResponse response = (SearchResponse) sendAndGetResponse(request);
 
         return response.getListOfPatients();
     }
 
-    private List<Patient> searchPatientByDoctorsFullNameOrReceiptDateRequest(String fullName, CustomDate date) {
-        ServerRequest request = new SearchByDoctorsFullNameOrDate(fullName,date);
+    private List<Patient> searchPatientByDoctorsFullNameOrReceiptDateRequest(String fullName, CustomDate date) throws CustomClientException {
+        ServerRequest request = new SearchByDoctorsFullNameOrDate(fullName, date);
 
         SearchResponse response = (SearchResponse) sendAndGetResponse(request);
 
@@ -166,7 +159,7 @@ public class PatientServiceImpl implements PatientService {
 
         FileResponse response = (FileResponse) sendAndGetResponse(request);
 
-        if(!response.isSuccess()){
+        if (!response.isSuccess()) {
             throw new CustomClientException("Couldn't read from file");
         }
     }
@@ -176,27 +169,36 @@ public class PatientServiceImpl implements PatientService {
 
         FileResponse response = (FileResponse) sendAndGetResponse(request);
 
-        if(!response.isSuccess()){
-            throw new CustomClientException("Couldn't read from file");
+        if (!response.isSuccess()) {
+            throw new CustomClientException("Couldn't save to file");
         }
     }
 
-    private List<Patient> getPageByListRequest(List<Patient> list, int currentPage, int amountOfPagesOnTheTable) {
-        ServerRequest getPageRequest = new FindPageByList(currentPage,amountOfPagesOnTheTable,list);
+    private List<Patient> getPageByListRequest(List<Patient> list, int currentPage, int amountOfPagesOnTheTable) throws CustomClientException {
+        ServerRequest getPageRequest = new FindPageByList(currentPage, amountOfPagesOnTheTable, list);
 
         PageResponse pageResponse = (PageResponse) sendAndGetResponse(getPageRequest);
 
         return pageResponse.getListOfPatients();
     }
 
-    @Override
-    public List<Patient> getPage(int amountOfPages, int amountOfPagesOnTheTable) {
-        return getPageRequest(amountOfPages,amountOfPagesOnTheTable);
+    private List<Patient> getAllPatientsRequest() throws CustomClientException {
+        ServerRequest getAllPatients = new GetAllPatients();
+
+        SearchResponse searchResponse = (SearchResponse) sendAndGetResponse(getAllPatients);
+
+        return searchResponse.getListOfPatients();
+
     }
 
     @Override
-    public List<Patient> getPageByList(List<Patient> list, int amountOfPages, int amountOfPagesOnTheTable) {
-        return getPageByListRequest(list,amountOfPages,amountOfPagesOnTheTable);
+    public List<Patient> getPage(int amountOfPages, int amountOfPagesOnTheTable) throws CustomClientException {
+        return getPageRequest(amountOfPages, amountOfPagesOnTheTable);
+    }
+
+    @Override
+    public List<Patient> getPageByList(List<Patient> list, int amountOfPages, int amountOfPagesOnTheTable) throws CustomClientException {
+        return getPageByListRequest(list, amountOfPages, amountOfPagesOnTheTable);
     }
 
     @Override
@@ -205,37 +207,42 @@ public class PatientServiceImpl implements PatientService {
     }
 
     @Override
-    public int deletePatientByDate(CustomDate date) {
+    public int deletePatientByDate(CustomDate date) throws CustomClientException {
         return deletePatientByDateRequest(date);
     }
 
     @Override
-    public int deletePatientByFullNameOrAddress(String fullName, String address) {
-        return deletePatientByFullNameOrAddressRequest(fullName,address);
+    public int deletePatientByFullNameOrAddress(String fullName, String address) throws CustomClientException {
+        return deletePatientByFullNameOrAddressRequest(fullName, address);
     }
 
     @Override
-    public int deletePatientByDoctorsFullNameOrReceiptDate(String fullName, CustomDate date) {
-        return deletePatientByDoctorsFullNameOrReceiptDateRequest(fullName,date);
+    public int deletePatientByDoctorsFullNameOrReceiptDate(String fullName, CustomDate date) throws CustomClientException {
+        return deletePatientByDoctorsFullNameOrReceiptDateRequest(fullName, date);
     }
 
     @Override
-    public List<Patient> searchPatientByDate(CustomDate date) {
+    public List<Patient> searchPatientByDate(CustomDate date) throws CustomClientException {
         return searchPatientByDateRequest(date);
     }
 
     @Override
-    public List<Patient> searchPatientByFullNameOrAddress(String fullName, String Address) {
-        return searchPatientByFullNameOrAddressRequest(fullName,Address);
+    public List<Patient> searchPatientByFullNameOrAddress(String fullName, String Address) throws CustomClientException {
+        return searchPatientByFullNameOrAddressRequest(fullName, Address);
     }
 
     @Override
-    public List<Patient> searchPatientByDoctorsFullNameOrReceiptDate(String fullName, CustomDate date) {
-        return searchPatientByDoctorsFullNameOrReceiptDateRequest(fullName,date);
+    public List<Patient> searchPatientByDoctorsFullNameOrReceiptDate(String fullName, CustomDate date) throws CustomClientException {
+        return searchPatientByDoctorsFullNameOrReceiptDateRequest(fullName, date);
     }
 
     @Override
-    public int getAmountOfPatients() {
+    public List<Patient> getAllPatients() throws CustomClientException {
+        return getAllPatientsRequest();
+    }
+
+    @Override
+    public int getAmountOfPatients() throws CustomClientException {
         return getAmountOfPatientsRequest();
     }
 

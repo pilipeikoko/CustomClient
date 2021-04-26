@@ -2,7 +2,7 @@ package org.bsuir.util;
 
 import java.io.Serializable;
 
-public enum RequestType implements Serializable {
+public enum RequestType {
     DELETE_BY_FULL_NAME_OR_ADDRESS,
     DELETE_BY_BIRTHDAY,
     DELETE_BY_DOCTORS_NAME_OR_DATE,
@@ -14,5 +14,6 @@ public enum RequestType implements Serializable {
     READ_FROM_FILE,
     FIND_PAGE,
     GET_AMOUNT_OF_PATIENTS,
-    FIND_PAGE_BY_LIST
+    FIND_PAGE_BY_LIST,
+    GET_ALL_PATIENTS
 }

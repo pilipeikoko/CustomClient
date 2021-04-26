@@ -2,7 +2,7 @@ package org.bsuir.request;
 
 import org.bsuir.util.RequestType;
 
-public class GetAmountOfPatients extends ServerRequest{
+public class GetAmountOfPatients extends ServerRequest {
     private int amountOfPatients;
 
     public GetAmountOfPatients(int amountOfPatients) {

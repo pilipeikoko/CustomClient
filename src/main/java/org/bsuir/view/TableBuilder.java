@@ -1,6 +1,7 @@
 package org.bsuir.view;
 
 import org.bsuir.model.CustomTableModel;
+import org.bsuir.util.Parameters;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
@@ -11,7 +12,7 @@ public class TableBuilder {
     private final JScrollPane tableScrollPane;
 
     public TableBuilder() {
-        DefaultTableModel model = new CustomTableModel();
+        DefaultTableModel model = new DefaultTableModel(Parameters.defaultData, Parameters.TABLE_HEADER);
         this.table = new JTable();
         this.tableScrollPane = new JScrollPane(table);
 
@@ -30,7 +31,7 @@ public class TableBuilder {
         table.getTableHeader().setBackground(new Color(32, 136, 203));
         table.getTableHeader().setForeground(new Color(255, 255, 255));
         table.setGridColor(new Color(100, 100, 100));
-       // table.setPreferredSize(new Dimension(700, 200));
+        // table.setPreferredSize(new Dimension(700, 200));
     }
 
     public JTable getTable() {

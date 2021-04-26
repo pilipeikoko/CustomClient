@@ -1,9 +1,12 @@
 package org.bsuir.request;
 
-public class ReadFromFile extends ServerRequest{
+import org.bsuir.util.RequestType;
+
+public class ReadFromFile extends ServerRequest {
     private String path;
 
-    public ReadFromFile(String path){
+    public ReadFromFile(String path) {
+        this.requestType = RequestType.READ_FROM_FILE;
         this.path = path;
     }
 

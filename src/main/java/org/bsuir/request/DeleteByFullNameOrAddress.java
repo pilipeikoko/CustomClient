@@ -2,11 +2,11 @@ package org.bsuir.request;
 
 import org.bsuir.util.RequestType;
 
-public class DeleteByFullNameOrAddress extends ServerRequest{
+public class DeleteByFullNameOrAddress extends ServerRequest {
     private String fullName;
     private String address;
 
-    public DeleteByFullNameOrAddress(){
+    public DeleteByFullNameOrAddress() {
         super();
     }
 

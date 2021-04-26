@@ -9,6 +9,7 @@ import org.jdatepicker.impl.UtilDateModel;
 import javax.swing.*;
 import java.awt.*;
 import java.util.Properties;
+
 //TODO mb refactor
 public class CardsBuilder {
     private static final int AMOUNT_OF_TEXT_FIELDS = 3;
@@ -20,7 +21,7 @@ public class CardsBuilder {
     private final JDatePanelImpl[] datePanels;
     private final JLabel[] labelItems;
 
-    public CardsBuilder(){
+    public CardsBuilder() {
         textFields = new JTextField[AMOUNT_OF_TEXT_FIELDS];
         datePanels = new JDatePanelImpl[AMOUNT_OF_DATE_PANELS];
         labelItems = new JLabel[AMOUNT_OF_LABEL_ITEMS];
@@ -33,7 +34,7 @@ public class CardsBuilder {
 
         cards.add(surnameOrAddressPanel, Parameters.SEARCH_TYPES[0]);
         cards.add(birthdayPanel, Parameters.SEARCH_TYPES[1]);
-        cards.add(fullDoctorsNameOrReceiptDatePanel,Parameters.SEARCH_TYPES[2]);
+        cards.add(fullDoctorsNameOrReceiptDatePanel, Parameters.SEARCH_TYPES[2]);
     }
 
     private JPanel createFullDoctorsNameOrReceiptDatePanel() {
@@ -44,12 +45,12 @@ public class CardsBuilder {
         UtilDateModel dateOfReceiptModel = new UtilDateModel();
         JDatePanelImpl dateOfReceiptPanel = new JDatePanelImpl(dateOfReceiptModel, new Properties());
         JDatePickerImpl dateOfReceiptPicker = new JDatePickerImpl(dateOfReceiptPanel, new DateLabelFormatter());
-        dateOfReceiptPanel.setMaximumSize(new Dimension(150,30));
-        dateOfReceiptPicker.setMaximumSize(new Dimension(150,30));
+        dateOfReceiptPanel.setMaximumSize(new Dimension(150, 30));
+        dateOfReceiptPicker.setMaximumSize(new Dimension(150, 30));
 
         JLabel doctorsFullNameLabel = new JLabel("Doctors full name");
         JTextField doctorsFullNameTextField = new JTextField();
-        doctorsFullNameTextField.setMaximumSize(new Dimension(150,30));
+        doctorsFullNameTextField.setMaximumSize(new Dimension(150, 30));
 
         GroupLayout layout = new GroupLayout(receiptDatePanel);
         layout.setAutoCreateGaps(true);
@@ -102,12 +103,13 @@ public class CardsBuilder {
 
         return birthdayPanel;
     }
-    private JPanel createSurnameOrAddressPanel(){
+
+    private JPanel createSurnameOrAddressPanel() {
         JPanel surnameOrAddressPanel = new JPanel();
 
         addSurnameOrAddressPanelComponents();
 
-        surnameOrAddressPanel.setPreferredSize(new Dimension(300,200));
+        surnameOrAddressPanel.setPreferredSize(new Dimension(300, 200));
 
         GroupLayout layout = new GroupLayout(surnameOrAddressPanel);
         layout.setAutoCreateGaps(true);
@@ -144,10 +146,10 @@ public class CardsBuilder {
         JLabel addressLabel = new JLabel("Address");
 
         JTextField fullNameTextField = new JTextField();
-        fullNameTextField.setMaximumSize(new Dimension(150,30));
+        fullNameTextField.setMaximumSize(new Dimension(150, 30));
 
         JTextField addressTextField = new JTextField();
-        addressTextField.setMaximumSize(new Dimension(150,30));
+        addressTextField.setMaximumSize(new Dimension(150, 30));
 
         textFields[0] = fullNameTextField;
         textFields[1] = addressTextField;

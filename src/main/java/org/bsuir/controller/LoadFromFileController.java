@@ -32,9 +32,9 @@ public class LoadFromFileController {
                         PatientsXMLReader xmlReader = new PatientsXMLReader(fileChooser.getSelectedFile());
 
                         //todo reset model
-                      //  patientsTableModel.resetModel(xmlReader.readAll());
+                        //  patientsTableModel.resetModel(xmlReader.readAll());
                     }
-                } catch (IllegalArgumentException| SAXException | ParserConfigurationException exception) {
+                } catch (IllegalArgumentException | SAXException | ParserConfigurationException exception) {
                     Alert.incorrectFormatAlert();
                 }
             }

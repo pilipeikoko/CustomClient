@@ -9,6 +9,6 @@ public class DeletePatientView {
         new DeletePatientController(deletePatientBuilder.getDeleteButton(),
                 deletePatientBuilder.getTextFields(), deletePatientBuilder.getLabelItems(),
                 deletePatientBuilder.getDatePanels(), deletePatientBuilder.getDeleteByTypeComboBox(),
-                deletePatientBuilder.getCards(),patientService);
+                deletePatientBuilder.getCards(), patientService);
     }
 }

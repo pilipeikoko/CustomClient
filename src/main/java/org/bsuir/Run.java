@@ -9,7 +9,6 @@ public class Run
     public static void main( String[] args )
     {
         PatientService patientService = new PatientServiceImpl();
-
         new MainFrameView(patientService);
     }
 }

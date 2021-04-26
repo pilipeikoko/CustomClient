@@ -18,7 +18,7 @@ public class DeletePatientBuilder {
         cardsBuilder = new CardsBuilder();
 
         JDialog dialog = new JDialog();
-        dialog.setLocation(600,300);
+        dialog.setLocation(600, 300);
         dialog.setPreferredSize(new Dimension(400, 220));
 
         deleteByTypeComboBox = new JComboBox<>(Parameters.SEARCH_TYPES);
@@ -26,9 +26,9 @@ public class DeletePatientBuilder {
 
         JPanel defaultDeletePanel = createDefaultDeletePanel();
 
-        dialog.add(defaultDeletePanel,BorderLayout.NORTH);
-        dialog.add(cardsBuilder.getCards(),BorderLayout.CENTER);
-        dialog.add(deleteButton,BorderLayout.SOUTH);
+        dialog.add(defaultDeletePanel, BorderLayout.NORTH);
+        dialog.add(cardsBuilder.getCards(), BorderLayout.CENTER);
+        dialog.add(deleteButton, BorderLayout.SOUTH);
 
         dialog.pack();
         dialog.setVisible(true);
@@ -42,7 +42,7 @@ public class DeletePatientBuilder {
 
         defaultDeletePanel.add(deleteByLabel);
         defaultDeletePanel.add(deleteByTypeComboBox);
-        defaultDeletePanel.setMaximumSize(new Dimension(300,100));
+        defaultDeletePanel.setMaximumSize(new Dimension(300, 100));
 
         return defaultDeletePanel;
     }
@@ -68,7 +68,7 @@ public class DeletePatientBuilder {
         return deleteByTypeComboBox;
     }
 
-    public JPanel getCards(){
+    public JPanel getCards() {
         return cardsBuilder.getCards();
     }
 }

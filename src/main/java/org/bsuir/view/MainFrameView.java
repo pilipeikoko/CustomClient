@@ -9,8 +9,8 @@ public class MainFrameView {
     public MainFrameView(PatientService patientService) {
         MainFrameBuilder frameBuilder = new MainFrameBuilder();
 
-        new MainFrameController(frameBuilder.getMenuBarItems(),frameBuilder.getButtonItems(),
-                frameBuilder.getLabelItems(), frameBuilder.getPageSpinner(), frameBuilder.getTable(),frameBuilder.getServiceComponentButtons(),patientService);
+        new MainFrameController(frameBuilder.getMenuBarItems(), frameBuilder.getButtonItems(),
+                frameBuilder.getLabelItems(), frameBuilder.getPageSpinner(), frameBuilder.getTable(), frameBuilder.getServiceComponentButtons(), patientService);
 
     }
 

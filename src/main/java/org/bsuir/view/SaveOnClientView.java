@@ -5,8 +5,8 @@ import org.bsuir.service.PatientService;
 
 import javax.swing.*;
 
-public class SaveToFileView {
-    public SaveToFileView(PatientService patientService) {
+public class SaveOnClientView {
+    public SaveOnClientView(PatientService patientService) {
         JFileChooser fileChooser = new JFileChooser();
         fileChooser.setDialogTitle("Save to");
         new SaveToFileController(fileChooser,patientService);

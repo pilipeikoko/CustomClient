@@ -1,5 +1,6 @@
 package org.bsuir.controller;
 
+import org.bsuir.exception.CustomClientException;
 import org.bsuir.exception.EmptyFieldException;
 import org.bsuir.service.PatientService;
 import org.bsuir.util.CustomDate;
@@ -52,12 +53,9 @@ public class DeletePatientController {
     }
 
     private void setComboBoxController() {
-        deleteByTypeComboBox.addItemListener(new ItemListener() {
-            @Override
-            public void itemStateChanged(ItemEvent e) {
-                CardLayout layout = (CardLayout) (cards.getLayout());
-                layout.show(cards, (String) e.getItem());
-            }
+        deleteByTypeComboBox.addItemListener(e -> {
+            CardLayout layout = (CardLayout) (cards.getLayout());
+            layout.show(cards, (String) e.getItem());
         });
     }
 
@@ -78,8 +76,7 @@ public class DeletePatientController {
                         String fullName = getFullName();
                         String address = getAddress();
 
-                        amountOfDeletedPatients = patientService.deletePatientByFullNameOrAddress(fullName,address);
-                        //todo update the table maybe?
+                        amountOfDeletedPatients = patientService.deletePatientByFullNameOrAddress(fullName, address);
                     } else if (deleteType.equals(Parameters.SEARCH_TYPES[1])) {
                         CustomDate birthday = new CustomDate(getBirthday());
 
@@ -90,13 +87,15 @@ public class DeletePatientController {
                         String doctorsFullName = getDoctorFullName();
                         CustomDate dateOfReceipt = new CustomDate(getDateOfReceipt());
 
-                        amountOfDeletedPatients = patientService.deletePatientByDoctorsFullNameOrReceiptDate(doctorsFullName,dateOfReceipt);
+                        amountOfDeletedPatients = patientService.deletePatientByDoctorsFullNameOrReceiptDate(doctorsFullName, dateOfReceipt);
                     }
 
                     SwingUtilities.getWindowAncestor(deleteButton).dispose();
                     Alert.deletionAlert(amountOfDeletedPatients);
                 } catch (EmptyFieldException exception) {
                     Alert.unknownTypeAlert();
+                } catch (CustomClientException exception) {
+                    Alert.serverAlert("Couldn't get server response");
                 }
             }
         });

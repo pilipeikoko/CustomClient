@@ -19,7 +19,7 @@ public class SearchPatientBuilder {
         searchButton = new JButton("Search");
 
         JDialog dialog = new JDialog();
-        dialog.setLocation(350,200);
+        dialog.setLocation(350, 200);
         dialog.setPreferredSize(new Dimension(920, 525));
 
         searchByTypeComboBox = new JComboBox<>(Parameters.SEARCH_TYPES);
@@ -110,11 +110,11 @@ public class SearchPatientBuilder {
         return pageComponentsBuilder.getButtonItems();
     }
 
-    public JLabel[] getPageLabelItems(){
+    public JLabel[] getPageLabelItems() {
         return pageComponentsBuilder.getLabelItems();
     }
 
-    public JSpinner getPageSpinner(){
+    public JSpinner getPageSpinner() {
         return pageComponentsBuilder.getPageSpinner();
     }
 
@@ -142,7 +142,7 @@ public class SearchPatientBuilder {
         return tableBuilder.getTable();
     }
 
-    public JPanel getCards(){
+    public JPanel getCards() {
         return cardsBuilder.getCards();
     }
 }

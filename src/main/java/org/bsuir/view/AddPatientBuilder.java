@@ -39,7 +39,7 @@ public class AddPatientBuilder {
 
     private void setDialog() {
         dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
-        dialog.setLocation(550,250);
+        dialog.setLocation(550, 250);
         dialog.setPreferredSize(new Dimension(450, 300));
 
         GroupLayout layout = new GroupLayout(dialog.getContentPane());
@@ -65,10 +65,8 @@ public class AddPatientBuilder {
         JDatePickerImpl dateOfReceiptPicker = new JDatePickerImpl(dateOfReceiptPanel, new DateLabelFormatter());
 
 
-
         datePanels[0] = dateOfBirthPanel;
         datePanels[1] = dateOfReceiptPanel;
-
 
 
         datePickers[0] = dateOfBirthPicker;

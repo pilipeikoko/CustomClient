@@ -25,7 +25,7 @@ public class PatientsXMLReader extends DefaultHandler {
         handler = new PatientsHandler();
     }
 
-    public List<Patient> readAll() throws IOException, SAXException,IllegalArgumentException {
+    public List<Patient> readAll() throws IOException, SAXException, IllegalArgumentException {
 
         parser.parse(file, handler);
 

@@ -1,6 +1,6 @@
 package org.bsuir.exception;
 
-public class CustomClientException extends Exception{
+public class CustomClientException extends Exception {
 
     public CustomClientException() {
     }

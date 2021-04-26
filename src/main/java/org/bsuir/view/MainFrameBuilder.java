@@ -106,7 +106,7 @@ public class MainFrameBuilder {
         return this.frame;
     }
 
-    public JButton[] getServiceComponentButtons(){
+    public JButton[] getServiceComponentButtons() {
         return serviceComponentsBuilder.getButtons();
     }
 }
